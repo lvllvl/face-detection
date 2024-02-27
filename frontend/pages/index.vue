@@ -1,12 +1,26 @@
 <template>
-  <div>
+  <div class="video-container">
     <video ref="videoElement" width="640" height="480" autoplay></video>
-    <button @click="activateCamera">Activate Camera</button>
-    <button @click="HOG">HOG Camera</button>
-    <button @click="HaarCascades">Haar Cascades Camera</button>
-    <!-- Add more buttons for algorithm selection here -->
+    <div class="button-container">
+      <button @click="activateCamera">Activate Camera</button>
+      <button @click="HOG">HOG Camera</button>
+      <button @click="HaarCascades">Haar Cascades Camera</button>
+      <!-- Add more buttons for algorithm selection here -->
+    </div>
   </div>
 </template>
+
+<style scoped>
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+</style>
 
 <script>
 export default {

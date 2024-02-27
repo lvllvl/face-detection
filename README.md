@@ -3,7 +3,7 @@ face detection from scratch
 
 ## TODO List:
 
-- [ ] set up nuxt.js front end 
+- [x] set up nuxt.js front end 
 - [ ] FE setup to capture camera/image inputs
 - [ ] connect FE to BE
 - [ ] FE must display images from camera
